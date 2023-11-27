@@ -1,0 +1,6 @@
+.form {
+  display: flex;
+  flexwrap: wrap;
+  justifycontent: center;
+  margin: "10px 0";
+}

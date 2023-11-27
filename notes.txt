@@ -1,0 +1,42 @@
+mongodb=mongodb+srv://paulmesparas:paulmesparas7@cluster0.tqleev4.mongodb.net/
+
+//add afunctionality
+- add a route
+- go to controllers to create that function for the route
+- go to FE and implement that call or api call.
+- create its action creator (action)
+- go to reducer and create the new case
+- dispatch the action by going to the component you need it done
+
+
+//adding Like functionality
+
+- add a route (patch request to you routes in your server), make sure to add it to you imports
+- go to controllers and create that function as to what happen when going to that route
+- go to FE, add the api call
+- go to actions of your redux, and create that action which dispatches to the store
+- go to your reducers and create that new case
+- go to the component to dispatch an action to update the likePost and add the id as its argument
+
+//Adding a space
+&nbsp;
+
+//App not responsive yet, material UI used is outdated
+
+//Redux action type constants should be declared separately for optimization and avoid untraceable errors
+    Using contants will give you an error if there are any typos
+
+//Deployment for backEnd
+        - Used Heroku as example
+        -move your node modules away from your github
+            -gitignore (node_modules build)
+        -Procfile
+            - will start when deployed in heroku
+            - web: npm run start
+
+        -URL for your backend or api should be the URL assigned by heroku when deployed
+
+//Deploy for FE
+        - Used Netlify for this App
+        - npm run build and then use that file to deploy in Netlify
+        - will run on the backend since the Url was already pointing to the backend in Heroku not localhost
